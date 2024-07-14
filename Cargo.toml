@@ -7,7 +7,7 @@ readme = "Readme.md"
 keywords = ["bevy", "debug", "overlay", "message"]
 categories = ["game-development", "development-tools"]
 repository = "https://github.com/nicopap/bevy-debug-text-overlay"
-version = "8.1.0"
+version = "14.0.0"
 edition = "2021"
 
 [features]
@@ -15,13 +15,12 @@ default = ["debug"]
 debug = ["bevy/bevy_render", "bevy/bevy_asset", "bevy/bevy_ui", "bevy/bevy_text", "bevy/bevy_core_pipeline", "bevy/default_font"]
 
 [dependencies]
-bevy = { version = "0.13", default-features = false }
+bevy = { version = "0.14", default-features = false }
 
 [dev-dependencies]
-bevy = { version = "0.13", default-features = false, features = [
+bevy = { version = "0.14", default-features = false, features = [
   "bevy_render", "x11", "bevy_core_pipeline", "bevy_asset", "bevy_sprite"
 ] }
-# bevy-inspector-egui = { version = "0.8" }
 
 [package.metadata.release]
 pre-release-replacements = [
