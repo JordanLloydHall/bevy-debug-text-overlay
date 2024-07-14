@@ -24,7 +24,7 @@ bevy = { version = "0.14", default-features = false, features = [
 
 [package.metadata.release]
 pre-release-replacements = [
-  {search="\\| 0.13 \\| [0-9.]* \\|",replace="| 0.13 | {{version}} |",file="Readme.md"},
+  {search="\\| 0.14 \\| [0-9.]* \\|",replace="| 0.14 | {{version}} |",file="Readme.md"},
   {search="bevy-debug-text-overlay = \\{ version = \"[0-9.]*\"",replace="bevy-debug-text-overlay = { version = \"{{version}}\"",file="Readme.md"},
   {search="bevy-debug-text-overlay = \"[0-9.]*\"",replace="bevy-debug-text-overlay = \"{{version}}\"",file="Readme.md"},
 ]
